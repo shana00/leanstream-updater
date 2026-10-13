@@ -1,10 +1,23 @@
-# LeanStream updater 1.1.1 - controlled test
+# LeanStream updater 1.1.2 - controlled test
 
-## Prerequisite-check repair
+## Manual updater self-upgrade
 
-Version 1.1.1 fixes the "Unrecognised add-on version" error caused by dependency
+Version 1.1.2 adds Update updater (public download) and Restore updater backup.
+Install this bootstrap ZIP once over the existing updater. Future updater releases
+can then be checked and installed from its menu, after your confirmation and ZIP
+verification. A code-only updater backup is saved; settings/credentials remain.
+Exit/reopen Kodi normally after a self-upgrade or restore. No automatic updates.
+
+The updater-only feed is updater-latest.json on this public host. It does not
+require a GitHub token and cannot select private add-on/skin/AI installation targets.
+If an interrupted upgrade leaves the updater unavailable, reinstall this bootstrap
+ZIP from the same Kodi source without uninstalling or clearing its settings.
+
+## Included prerequisite-check repair
+
+The prior 1.1.1 repair for "Unrecognised add-on version" is retained for dependency
 formats such as 1.26.16+matrix.1. Unknown dependency versions appear in the report;
-unknown required versions still block installation. Install this ZIP over 1.1.0,
+unknown required versions still block installation. Install this ZIP over the existing updater,
 keep all existing settings, then rerun the read-only check. No account reset needed.
 
 ## Install directly in Kodi on the Shield
@@ -13,9 +26,9 @@ keep all existing settings, then rerun the read-only check. No account reset nee
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.1.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.2.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.1.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.2.
 8. Run Check installed prerequisites (no changes). Send only a sanitised report.
 9. STOP until the private add-on + skin + AI test release is prepared and approved.
 
