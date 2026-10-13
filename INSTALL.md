@@ -1,8 +1,25 @@
-# LeanStream updater 1.1.2 - controlled test
+# LeanStream updater 1.1.3 - controlled test
+
+## Suite prerequisites managed by the installer
+
+Kodi built-in interfaces are checked from its application VFS metadata, not
+reported missing merely because the ordinary JSON-RPC add-on list omits them.
+Required missing add-ons and disabled approved modules are prepared through Kodi
+native install/enable dialogs after the paired suite ZIPs and AI files verify.
+Available declared optional modules may also be prepared; absent optional ones
+are non-blocking. The read-only check never installs anything. Every required
+component is rechecked before replacing the private suite code.
+
+Kodi owns repository/platform selection and native confirmation; no security,
+repository or account settings are changed. Completed prerequisite changes may
+remain after cancellation and are not covered by private suite code rollback.
+Old/unknown required versions still block: Kodi21 InstallAddon does not update
+already installed old add-ons. No global update, uninstall or guessed success.
+Native dialog/runtime behavior and Android metadata still need device acceptance.
 
 ## Manual updater self-upgrade
 
-Version 1.1.2 adds Update updater (public download) and Restore updater backup.
+Version 1.1.2 added Update updater (public download) and Restore updater backup.
 Install this bootstrap ZIP once over the existing updater. Future updater releases
 can then be checked and installed from its menu, after your confirmation and ZIP
 verification. A code-only updater backup is saved; settings/credentials remain.
@@ -26,9 +43,9 @@ keep all existing settings, then rerun the read-only check. No account reset nee
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.2.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.3.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.2.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.3; exit/reopen Kodi normally.
 8. Run Check installed prerequisites (no changes). Send only a sanitised report.
 9. STOP until the private add-on + skin + AI test release is prepared and approved.
 

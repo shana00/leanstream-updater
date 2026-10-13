@@ -1,6 +1,6 @@
 # LeanStream updater download
 
-Updater 1.1.2 adds manual Update updater and Restore updater backup; the 1.1.1 dependency-version repair is retained.
+Updater 1.1.3 checks built-in Kodi interfaces correctly and prepares suite prerequisites through native Kodi install/enable dialogs. The 1.1.1 dependency fix and 1.1.2 self-upgrade remain.
 
 Updater-only public bootstrap for a controlled Kodi 21 Shield test. Install over the existing updater, then rerun the read-only check.
 
