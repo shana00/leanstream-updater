@@ -1,4 +1,21 @@
-# LeanStream updater 1.1.4 - controlled test
+# LeanStream updater 1.1.5 - controlled test
+
+## Safe trailer-preference setup
+
+Only after the verified private suite is installed and Kodi restarted normally,
+the updater can offer eleven non-secret YouTube preferences: playback quality,
+selection, cache sizes and request timeouts. Each changed value is shown for owner
+confirmation. Existing accounts, API keys, logins, proxy, SSL, codec, DRM and security
+settings are neither read nor copied. A separate allowlisted preference backup is
+saved before setters and verified by readback. Restore trailer preferences is
+separate from the private suite's code-only rollback. An interrupted setup blocks
+other code actions until its preferences are restored. Declining is not repeated
+at startup; no pending request means no preference reads. Package AI switches stay
+off by default and existing device switches are preserved.
+
+This is a locally verified candidate, not proof of Android native runtime behavior.
+New skin compatibility, normal restart, preference confirmation/restore, playback
+and cold/warm speed require actual Shield acceptance. PC speed is not guaranteed.
 
 ## Minimum and ABI compatibility repair
 
@@ -57,9 +74,9 @@ keep all existing settings, then rerun the read-only check. No account reset nee
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.4.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.5.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.4; exit/reopen Kodi normally.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.5; exit/reopen Kodi normally.
 8. Run Check installed prerequisites (no changes). Send only a sanitised report.
 9. STOP until the private add-on + skin + AI test release is prepared and approved.
 
