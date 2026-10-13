@@ -1,4 +1,27 @@
-# LeanStream updater 1.1.5 - controlled test
+# LeanStream updater 1.1.6 - controlled test
+
+## Safe GitHub-access diagnostic
+
+Existing updater users: choose Update updater (public download), approve 1.1.6,
+exit and reopen Kodi normally, then select Check GitHub access (no changes), the
+last menu item. Send a screenshot of that report, never the token value or the
+token settings screen. Updating the updater itself needs no private GitHub token.
+
+The manual diagnostic reads only the saved github_token setting. It makes at most
+three GET requests to GitHub: account, private repository, exact Shield test feed.
+It reports safe account metadata, exact HTTP status, expiry if GitHub reports it,
+quota and endpoint requirements. Endpoint requirements are NOT the token's full
+permissions, and missing expiry is unknown, not proof the token expired.
+401, permission-related 403, unknown-policy 403, 403/429 rate limits, hidden/missing
+404 and network/TLS/timeout failures are distinguished. It stops on first failure
+with no automatic retry. An eight-second socket timeout and bounded response sizes
+are used, with cancellation between checks/reads; DNS is not a hard wall-clock SLA.
+Redirects are blocked. Tokens, fragments, fingerprints, arbitrary response bodies,
+headers, URLs and exception strings are not displayed, logged or written to files.
+No install, credential replacement, permission change or account reset occurs.
+A PASS verifies feed access, not package download or native Shield installation.
+
+GitHub semantics: https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api
 
 ## Safe trailer-preference setup
 
@@ -74,11 +97,11 @@ keep all existing settings, then rerun the read-only check. No account reset nee
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.5.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.6.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.5; exit/reopen Kodi normally.
-8. Run Check installed prerequisites (no changes). Send only a sanitised report.
-9. STOP until the private add-on + skin + AI test release is prepared and approved.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.6; exit/reopen Kodi normally.
+8. Run Check GitHub access (no changes). Send only its safe report screenshot.
+9. STOP if it fails; do not reset accounts or repeatedly retry a rate limit.
 
 ## Credentials and private packages
 
