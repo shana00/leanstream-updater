@@ -1,4 +1,11 @@
-# LeanStream updater 1.1.0 - controlled test
+# LeanStream updater 1.1.1 - controlled test
+
+## Prerequisite-check repair
+
+Version 1.1.1 fixes the "Unrecognised add-on version" error caused by dependency
+formats such as 1.26.16+matrix.1. Unknown dependency versions appear in the report;
+unknown required versions still block installation. Install this ZIP over 1.1.0,
+keep all existing settings, then rerun the read-only check. No account reset needed.
 
 ## Install directly in Kodi on the Shield
 
@@ -6,9 +13,9 @@
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.0.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.1.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.0.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.1.
 8. Run Check installed prerequisites (no changes). Send only a sanitised report.
 9. STOP until the private add-on + skin + AI test release is prepared and approved.
 

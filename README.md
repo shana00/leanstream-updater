@@ -1,6 +1,8 @@
 # LeanStream updater download
 
-Updater-only public bootstrap for a controlled Kodi 21 Shield test.
+Updater 1.1.1 repairs Kodi dependency-version checks (+matrix/revisions/prereleases).
+
+Updater-only public bootstrap for a controlled Kodi 21 Shield test. Install over the existing updater, then rerun the read-only check.
 
 Kodi source: https://shana00.github.io/leanstream-updater/
 
