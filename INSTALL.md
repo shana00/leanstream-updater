@@ -1,4 +1,18 @@
-# LeanStream updater 1.1.3 - controlled test
+# LeanStream updater 1.1.4 - controlled test
+
+## Minimum and ABI compatibility repair
+
+Version1.1.4 preserves both import minversion and compiled version, and checks
+the provided backwards-compatible ABI as Kodi21 does. Duplicate/transitive
+declarations and verified planned packages keep both constraints. The former
+filesystem1.1.8/minimum1.1.9 warning can be false: the actual declared minimum
+may be1.1.7, subject also to the device's provided ABI. Do not upgrade Kodi based
+on that old warning alone. Unknown/malformed required metadata and genuinely
+incompatible versions remain blockers. Reports show updater/Kodi versions,
+requested interface, provided ABI and requesting add-ons for easier diagnosis.
+Local tests/actual PC XML audits are not native Shield acceptance; send a fresh
+read-only report after upgrading the updater. No credentials are needed to update
+the updater itself. This candidate does not publish or install the private suite.
 
 ## Suite prerequisites managed by the installer
 
@@ -43,9 +57,9 @@ keep all existing settings, then rerun the read-only check. No account reset nee
 2. Enter https://shana00.github.io/leanstream-updater/ and name it LeanStream Updater.
 3. Open Add-ons -> Add-on browser -> Install from ZIP file.
 4. If needed, read and accept Kodi's Unknown sources warning yourself.
-5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.3.zip.
+5. Select LeanStream Updater -> plugin.program.leanstream.updater-1.1.4.zip.
 6. Install over the existing updater; do not uninstall it or delete its settings.
-7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.3; exit/reopen Kodi normally.
+7. Open Program add-ons -> LeanStream Private Updater. Verify version 1.1.4; exit/reopen Kodi normally.
 8. Run Check installed prerequisites (no changes). Send only a sanitised report.
 9. STOP until the private add-on + skin + AI test release is prepared and approved.
 
