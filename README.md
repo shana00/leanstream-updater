@@ -1,9 +1,5 @@
-# LeanStream Updater
+# LeanStream updater1.1.10
 
-Updater1.1.9 is available at <https://shana00.github.io/leanstream-updater/>.
-Only the updater is public; the application, skin and bundled AI stay private.
+Cumulative updater with one-time, backed-up scraping setup for a verified private suite. No intermediate release needed.
 
-New: compact setup checklist, technical details and the full sanitized report
-downloaded through an optional same-Wi-Fi QR or saved to a chosen folder.
-Existing accounts, settings and the device's authorized repository access stay
-on that device. No shared credential is included. See [instructions](INSTALL.md).
+[Instructions](INSTALL.md).
