@@ -1,10 +1,10 @@
 {
   "addon_id": "plugin.program.leanstream.updater",
-  "filename": "plugin.program.leanstream.updater-1.1.6.zip",
+  "filename": "plugin.program.leanstream.updater-1.1.9.zip",
   "kodi_major": 21,
   "minimum_updater": "1.1.2",
   "schema": 1,
-  "sha256": "5181d2775c6ac4ed8a3ef10fdd835afb1ca13b7334b3c8df486a93d49d63a43d",
-  "size": 40092,
-  "version": "1.1.6"
+  "sha256": "e483e42f7a20fa70c4c37b2cd1f7c0e6effa4eedaea9b01510079aded21a463c",
+  "size": 73479,
+  "version": "1.1.9"
 }
